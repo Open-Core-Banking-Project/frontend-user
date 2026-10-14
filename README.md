@@ -1,470 +1,114 @@
-# Core Banking Platform — Frontend Applications
-
-The Core Banking Platform frontend repository contains the web and mobile-facing applications used by bank staff, administrators, individual customers, corporate customers, agents, compliance teams, finance teams and other authorised users.
-
-The frontend applications connect to approved backend APIs and provide secure, accessible and responsive interfaces for banking operations.
-
-This project is currently under active development by a volunteer team and is not yet intended for production banking use.
-
----
-
-## Project objectives
-
-The frontend platform is designed to:
-
-* Provide secure banking interfaces for different user groups
-* Support role-based and institution-based access
-* Maintain a consistent user experience across applications
-* Reuse a shared design system and common components
-* Support desktop, tablet and mobile layouts
-* Integrate safely with backend banking services
-* Handle complex financial workflows clearly
-* Provide accessible interfaces
-* Support multiple institutions and branding configurations
-* Maintain strong performance and reliability
-* Support automated testing and continuous delivery
-
----
-
-## Frontend applications
-
-The mature release of the platform contains eight primary frontend applications.
-
-### 1. Bank Staff Operations Portal
-
-Used by:
-
-* Tellers
-* Customer-service officers
-* Branch operations staff
-* Account officers
-* Branch supervisors
-* Operations managers
-
-Main capabilities:
-
-* Customer search
-* Customer 360-degree view
-* Individual onboarding
-* Corporate onboarding
-* KYC management
-* Account opening
-* Account maintenance
-* Cash deposits
-* Cash withdrawals
-* Transfers
-* Transaction enquiries
-* Account restrictions
-* Account freeze and unfreeze requests
-* Service requests
-* Complaints
-* Maker-checker approvals
-* Branch dashboards
-* Operational work queues
-* Teller balancing
-* Statement generation
-* Receipt generation
-
-Recommended framework:
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-
----
-
-### 2. System Administration Portal
-
-Used by:
-
-* Platform administrators
-* Institution administrators
-* Security administrators
-* Product administrators
-* Operations administrators
-
-Main capabilities:
-
-* Institution configuration
-* Branch configuration
-* Region configuration
-* Currency configuration
-* Holiday and working-day configuration
-* Product configuration
-* Pricing configuration
-* Fee configuration
-* Limit configuration
-* Policy configuration
-* Roles and permissions
-* User access management
-* Workflow configuration
-* Approval configuration
-* Feature flags
-* Country packs
-* Integration credentials
-* API-client registration
-* Branding configuration
-* Notification templates
-* Audit settings
-* Environment settings
-
-Recommended framework:
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-
----
-
-### 3. Individual Internet Banking
-
-Used by personal banking customers.
-
-Main capabilities:
-
-* Customer registration
-* Login
-* Multi-factor authentication
-* Account overview
-* Available balance
-* Ledger balance
-* Transaction history
-* Internal transfers
-* Interbank transfers
-* Beneficiary management
-* Scheduled transfers
-* Bill payments
-* Airtime purchase
-* Mobile-data purchase
-* Electricity payments
-* Cable television payments
-* Statement download
-* Receipt download
-* Card controls
-* Loan applications
-* Savings goals
-* Profile management
-* Security settings
-* Notification preferences
-* Support requests
-* Secure messaging
-
-Recommended framework:
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-
----
-
-### 4. Mobile Banking Application
-
-Used by individual banking customers on mobile devices.
-
-Main capabilities:
-
-* Secure onboarding
-* Login
-* Biometric authentication
-* Device binding
-* Multi-factor authentication
-* Account overview
-* Transaction history
-* Internal transfers
-* Interbank transfers
-* Beneficiary management
-* Bill payments
-* Airtime and data purchase
-* QR payments
-* Card controls
-* Loan applications
-* Savings goals
-* Push notifications
-* Statement and receipt access
-* Profile management
-* Security settings
-* Secure support
-* Session timeout
-* Device management
-
-Recommended framework:
-
-* Flutter
-* Dart
-
-Target platforms:
-
-* Android
-* iOS
-
----
-
-### 5. Corporate Internet Banking Portal
-
-Used by:
-
-* Corporate administrators
-* Corporate payment initiators
-* Corporate payment approvers
-* Accountants
-* Finance managers
-* Payroll officers
-* Business owners
-
-Main capabilities:
-
-* Corporate account overview
-* Multiple company accounts
-* Corporate-user management
-* Role and mandate management
-* Maker-checker payment workflows
-* Bulk payments
-* Payroll processing
-* Payment-file upload
-* Payment templates
-* Beneficiary management
-* Scheduled payments
-* Virtual accounts
-* Collection accounts
-* Cash pooling
-* Account sweeping
-* Escrow account access
-* Statements
-* Reconciliation files
-* Corporate limits
-* API credentials
-* Host-to-host configuration
-* Approval queues
-* Corporate support requests
-
-Recommended framework:
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-
----
-
-### 6. Agent Banking Application
-
-Used by:
-
-* Banking agents
-* Field officers
-* Microfinance officers
-* Agency supervisors
-
-Main capabilities:
-
-* Agent login
-* Device binding
-* Customer registration
-* Customer verification
-* Cash deposits
-* Cash withdrawals
-* Transfers
-* Bill payments
-* Airtime and data purchase
-* Loan collections
-* Loan disbursement support
-* Agent float
-* Agent commissions
-* Transaction receipts
-* Customer transaction history
-* Offline transaction queue
-* Background synchronisation
-* Agent support
-* Device and terminal status
-* Daily activity summary
-
-Recommended framework:
-
-* Flutter
-* Dart
-
-The application should support unreliable network conditions and controlled offline operation.
-
----
-
-### 7. Risk, Compliance and Fraud Portal
-
-Used by:
-
-* Compliance officers
-* AML analysts
-* Fraud analysts
-* Risk officers
-* Investigation teams
-* Security teams
-
-Main capabilities:
-
-* Fraud alert dashboard
-* AML alert dashboard
-* Alert prioritisation
-* Case assignment
-* Customer risk profile
-* Transaction investigation
-* Sanctions screening
-* PEP screening
-* Watchlist screening
-* Watchlist management
-* Device-risk information
-* Login-risk information
-* Case notes
-* Evidence upload
-* Approval workflows
-* Suspicious-activity review
-* Regulatory reporting
-* Model performance monitoring
-* False-positive analysis
-* Audit trail access
-
-Recommended framework:
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-
----
-
-### 8. Finance, Reconciliation and Reporting Portal
-
-Used by:
-
-* Finance officers
-* Reconciliation officers
-* Settlement officers
-* Accountants
-* Auditors
-* Management teams
-* Regulatory reporting teams
-
-Main capabilities:
-
-* General-ledger reports
-* Trial balance
-* Profit-and-loss reports
-* Balance-sheet reports
-* Settlement dashboard
-* Reconciliation workbench
-* Suspense-account management
-* Unmatched-entry investigation
-* Nostro reconciliation
-* Provider reconciliation
-* Financial-close controls
-* Regulatory reports
-* Management reports
-* Scheduled reports
-* Audit-trail search
-* Executive dashboards
-* Report export
-* Exception queues
-* Period-end approval
-
-Recommended framework:
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-
----
-
-## Recommended technology stack
-
-### Web applications
-
-Recommended stack:
-
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
-* React Hook Form
-* Zod
-* TanStack Query
-* TanStack Table
-* Playwright
-* Jest or Vitest
-* Storybook
-* OpenAPI-generated clients
-* ESLint
-* Prettier
-
-### Mobile applications
-
-Recommended stack:
-
-* Flutter
-* Dart
-* Riverpod, Bloc or another approved state-management solution
-* Dio or another approved HTTP client
-* Secure storage
-* Biometric authentication libraries
-* Push-notification libraries
-* Flutter integration tests
-* Widget tests
-
-### Design and collaboration
-
-Recommended tools:
-
-* Figma
-* FigJam
-* GitHub
-* Storybook
-* GitHub Issues
-* GitHub Projects
-
----
-
-## Suggested repository structure
+# Core Banking Platform — Frontend User
+
+`frontend-user` is the **customer-facing web application repository** for the Core Banking Platform. It provides secure, responsive internet banking experiences for **individual** and **corporate** customers through approved backend APIs.
+
+> **Development status:** This project is being developed by a volunteer team. It is **not production-ready** and must not be used to process real customer funds or sensitive banking data until the required security, regulatory, and operational approvals have been completed.
+
+## Repository separation
+
+The frontend platform is divided into three independently maintained repositories:
+
+| Repository | Responsibility |
+| --- | --- |
+| **`frontend-user`** (this repository) | Individual and corporate internet banking **web portals** |
+| `frontend-admin` | Internal staff operations, platform administration, risk/compliance, finance, reconciliation, and reporting web portals |
+| `frontend-mobile` | Customer mobile banking and agent banking applications (Flutter/Dart) |
+
+The repositories share **API contracts, design standards, security requirements, and user experience conventions**, but must not assume direct imports from each other's source trees. Reusable assets and clients may be distributed through separately versioned packages, where approved.
+
+## Objectives
+
+- Make everyday banking clear, accessible, secure, and reliable for customers.
+- Support individual and corporate customer journeys without mixing authorisation boundaries.
+- Respect tenant/institution branding, entitlements, and available products.
+- Support desktop, tablet, and mobile web browsers.
+- Integrate with backend services using typed, approved API contracts.
+- Provide consistent loading, validation, failure, confirmation, and transaction-result experiences.
+- Enable automated testing, code review, and controlled deployment.
+
+## Applications in scope
+
+### 1. Individual internet banking
+
+**Audience:** Personal banking customers.
+
+**Planned capabilities:**
+
+- Registration, login, multi-factor authentication, password recovery, and security settings
+- Account overview, available/ledger balances, and transaction history
+- Internal and interbank transfers, beneficiaries, and scheduled transfers
+- Bill payments, airtime, mobile data, electricity, and cable TV payments
+- Statements, receipts, card controls, and transaction status tracking
+- Loan applications, savings goals, and profile management
+- Notifications, support requests, and secure messaging
+
+### 2. Corporate internet banking
+
+**Audience:** Business owners, finance managers, accountants, payroll officers, corporate administrators, payment initiators, and approvers.
+
+**Planned capabilities:**
+
+- Multi-account and multi-company account views, where authorised
+- Corporate user administration, roles, mandates, and transaction limits
+- Maker-checker payment initiation and approval workflows
+- Bulk payments, payroll, payment file upload, and payment templates
+- Beneficiaries, scheduled payments, virtual accounts, and collections
+- Cash pooling, account sweeping, and escrow account access, where supported
+- Statements, reconciliation file download, and approval queues
+- Authorised API credentials, host-to-host configuration, and support requests
+
+**Important:** Features listed above describe the intended product scope, **not a claim that each feature has already been implemented**. Delivery is tracked in issues and milestones.
+
+## Out of scope
+
+This repository must not contain internal teller workflows, branch operations, institution/system administration, AML/fraud case management, general-ledger reporting, or native Flutter apps. These belong in `frontend-admin` or `frontend-mobile` as appropriate. Backend banking logic, ledger posting, fee calculation, and final authorisation decisions remain in backend services.
+
+## Proposed technology stack
+
+| Area | Recommended choice |
+| --- | --- |
+| Web framework | Next.js / React |
+| Language | TypeScript (strict mode) |
+| Styling | Tailwind CSS |
+| Forms and validation | React Hook Form + Zod |
+| Server state | TanStack Query |
+| Data tables | TanStack Table, where needed |
+| API integration | OpenAPI-generated typed clients, where available |
+| Unit/component testing | Jest or Vitest and React Testing Library |
+| End-to-end testing | Playwright |
+| Component documentation | Storybook, where appropriate |
+| Quality tools | ESLint, Prettier, TypeScript |
+
+These are proposed choices based on the platform plan. **The versions and commands in the checked-in project configuration are authoritative.**
+
+## Suggested project structure
+
+A structure suitable for a single repository containing the two web portals is:
 
 ```text
-frontend/
+frontend-user/
 ├── apps/
-│   ├── staff-operations-portal/
-│   ├── admin-portal/
-│   ├── internet-banking/
-│   ├── corporate-banking/
-│   ├── risk-compliance-portal/
-│   └── finance-reporting-portal/
-│
-├── mobile/
-│   ├── customer-banking-app/
-│   └── agent-banking-app/
-│
+│   ├── individual-banking/        # Personal customer web portal
+│   └── corporate-banking/         # Corporate customer web portal
 ├── packages/
-│   ├── ui/
-│   ├── design-tokens/
-│   ├── api-client/
-│   ├── authentication/
-│   ├── permissions/
-│   ├── forms/
-│   ├── tables/
-│   ├── charts/
-│   ├── validation/
-│   ├── utilities/
-│   ├── types/
-│   └── testing/
-│
+│   ├── ui/                        # Reusable customer-facing components
+│   ├── design-tokens/             # Shared styles and theme contracts
+│   ├── api-client/                # Generated/typed backend clients
+│   ├── auth/                      # Authentication integration
+│   ├── permissions/               # UI entitlement helpers
+│   ├── forms/                     # Shared form components
+│   ├── validation/                # Shared input schemas
+│   ├── types/                     # Common TypeScript types
+│   └── utils/                     # Formatting and other utilities
 ├── docs/
 │   ├── architecture/
-│   ├── design-system/
-│   ├── accessibility/
 │   ├── authentication/
-│   ├── permissions/
-│   ├── testing/
+│   ├── accessibility/
+│   ├── api-integration/
+│   ├── design-system/
 │   └── deployment/
-│
-├── scripts/
-├── .github/
+├── .github/workflows/
+├── .env.example
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
 ├── SECURITY.md
@@ -472,1094 +116,183 @@ frontend/
 └── README.md
 ```
 
-The exact structure may change as the project architecture develops.
+> This is a **target layout** rather than a statement that these directories already exist. Shared modules should be extracted only where there is a real reuse requirement. Application-specific workflows should stay inside their respective apps.
 
----
+## Local development
 
-## Shared design system
+### Prerequisites
 
-All frontend applications should use a shared design system where practical.
+- Git
+- A supported Node.js LTS version
+- The package manager and version specified by the repository lockfile / `packageManager` field
+- Access to a development backend or approved mocked API
+- An editor such as VS Code
 
-The design system should include:
+### Set up
 
-* Colours
-* Typography
-* Spacing
-* Breakpoints
-* Shadows
-* Border radii
-* Icons
-* Buttons
-* Inputs
-* Select fields
-* Checkboxes
-* Radio buttons
-* Date fields
-* Currency fields
-* Search fields
-* Data tables
-* Pagination
-* Tabs
-* Navigation
-* Sidebars
-* Dialogs
-* Drawers
-* Alerts
-* Toast notifications
-* Cards
-* Charts
-* Status badges
-* Loading indicators
-* Empty states
-* Error states
-* Permission-restricted states
-* Transaction summaries
-* Approval components
-* Confirmation screens
+```bash
+# Use the actual repository URL provided by the maintainers
+git clone <frontend-user-repository-url>
+cd frontend-user
 
-Components should support:
+# If pnpm is the configured package manager
+corepack enable
+pnpm install
 
-* Default state
-* Hover state
-* Focus state
-* Active state
-* Disabled state
-* Loading state
-* Error state
-* Success state
-
----
-
-## Design principles
-
-The frontend should be:
-
-* Clear
-* Consistent
-* Secure
-* Accessible
-* Responsive
-* Easy to navigate
-* Suitable for financial operations
-* Efficient for frequent staff use
-* Understandable to non-technical customers
-* Reliable under slow network conditions
-
-Banking interfaces should prioritise clarity over decoration.
-
-Important financial information should be easy to locate and difficult to misunderstand.
-
----
-
-## UI/UX requirements
-
-Every feature should include the required user states.
-
-Designs should cover:
-
-* Default state
-* Loading state
-* Empty state
-* Error state
-* Success state
-* Disabled state
-* Restricted-access state
-* Session-expired state
-* Network-failure state
-* Confirmation state
-* Review state
-* Completed state
-
-Forms should include:
-
-* Labels
-* Instructions
-* Validation messages
-* Required-field indicators
-* Error summaries
-* Confirmation steps
-* Accessible focus behaviour
-
-High-risk transactions should include a clear review and confirmation stage.
-
----
-
-## Responsive design
-
-Web applications should support:
-
-* Desktop
-* Laptop
-* Tablet
-* Mobile web
-
-The staff, administration, compliance and finance portals should be optimised primarily for desktop and laptop use.
-
-Internet banking should support desktop, tablet and mobile browsers.
-
-Avoid layouts that require unnecessary horizontal scrolling.
-
-Large data tables should provide responsive alternatives where practical.
-
----
-
-## Accessibility
-
-Frontend applications should aim to meet WCAG 2.1 AA or a later approved accessibility standard.
-
-Requirements include:
-
-* Keyboard navigation
-* Visible focus indicators
-* Proper form labels
-* Semantic HTML
-* Screen-reader support
-* Sufficient colour contrast
-* Accessible error messages
-* Accessible dialogs
-* Accessible data tables
-* Descriptive button labels
-* Alternative text for meaningful images
-* Reduced-motion support where applicable
-* Logical heading structure
-
-Colour should not be the only way status or meaning is communicated.
-
----
-
-## Authentication
-
-Frontend applications may support:
-
-* Username and password
-* Multi-factor authentication
-* One-time passwords
-* Biometric authentication
-* Trusted-device registration
-* Session timeout
-* Refresh tokens
-* Device management
-* Password reset
-* Account lockout
-* Suspicious-login verification
-
-Authentication should be implemented using approved identity services.
-
-Frontend applications must not implement their own insecure token systems.
-
----
-
-## Authorisation and permissions
-
-Every application must respect role-based permissions.
-
-Examples include:
-
-* Customer
-* Teller
-* Branch supervisor
-* Operations officer
-* Compliance officer
-* Fraud analyst
-* Finance officer
-* Auditor
-* System administrator
-* Corporate initiator
-* Corporate approver
-* Agent
-* Relationship manager
-
-The frontend may hide or disable unavailable actions, but backend services must always enforce permissions independently.
-
-Frontend permission checks are for user experience, not final security enforcement.
-
----
-
-## API integration
-
-Frontend applications should communicate with backend services through approved APIs.
-
-Use:
-
-* Generated API clients where possible
-* Shared request types
-* Shared response types
-* Consistent error handling
-* Correlation IDs
-* Retry rules
-* Request cancellation
-* Safe timeout handling
-
-Frontend applications must never connect directly to backend databases.
-
-Do not expose internal service credentials in client-side code.
-
----
-
-## API error handling
-
-Applications should handle errors such as:
-
-* Validation errors
-* Authentication errors
-* Authorisation errors
-* Network errors
-* Timeouts
-* Service unavailability
-* Duplicate requests
-* Insufficient balance
-* Transaction-limit errors
-* Account restrictions
-* Provider failures
-* Session expiration
-
-Error messages should be useful without exposing sensitive technical details.
-
-Do not display:
-
-* Stack traces
-* Database errors
-* Internal service names
-* Credentials
-* Tokens
-* Secret values
-
----
-
-## Transaction user experience
-
-Financial transactions should use a clear sequence.
-
-Recommended flow:
-
-1. Enter transaction details.
-2. Validate input.
-3. Display fees and charges.
-4. Show available balance where permitted.
-5. Present a review screen.
-6. Request authentication or approval.
-7. Submit the transaction once.
-8. Show processing state.
-9. Display the result.
-10. Provide a transaction reference.
-11. Provide a downloadable or shareable receipt where permitted.
-
-The user interface must prevent accidental duplicate submissions.
-
-Submit buttons should be disabled while a transaction is being processed.
-
----
-
-## Financial display rules
-
-Applications should:
-
-* Display currency clearly
-* Use consistent decimal places
-* Separate thousands appropriately
-* Distinguish available balance from ledger balance
-* Show debit and credit information clearly
-* Show fees before confirmation
-* Show transaction status
-* Show transaction references
-* Show posting date and transaction date where required
-* Avoid misleading rounded figures
-
-Never perform authoritative financial calculations only in the browser.
-
-The backend remains the source of truth for balances, fees, interest and transaction results.
-
----
-
-## Forms and validation
-
-Recommended tools:
-
-* React Hook Form
-* Zod
-* Approved shared validators
-
-Forms should:
-
-* Validate required fields
-* Validate field formats
-* Display clear messages
-* Prevent invalid submission
-* Preserve safe values after recoverable errors
-* Clear sensitive fields where appropriate
-* Prevent repeated submission
-* Support keyboard navigation
-* Support screen readers
-
-Frontend validation improves usability.
-
-Backend validation remains mandatory.
-
----
-
-## State management
-
-Use the simplest approved state-management approach that meets the application’s needs.
-
-Recommended categories:
-
-* Server state: TanStack Query
-* Form state: React Hook Form
-* Local component state: React state
-* Shared application state: approved lightweight store
-* Authentication state: shared authentication package
-* Permissions: shared permission package
-
-Avoid placing all state in one global store.
-
-Avoid duplicating backend server state unnecessarily.
-
----
-
-## Data tables
-
-Banking applications often require complex data tables.
-
-Tables may support:
-
-* Pagination
-* Search
-* Filtering
-* Sorting
-* Column visibility
-* Export
-* Row selection
-* Bulk actions
-* Status indicators
-* Date ranges
-* Saved filters
-
-Large datasets should use server-side pagination and filtering.
-
-Do not load unlimited transaction records into the browser.
-
----
-
-## Dashboard guidelines
-
-Dashboards should show information relevant to the user’s role.
-
-Examples include:
-
-* Assigned tasks
-* Pending approvals
-* Failed transactions
-* Open cases
-* Reconciliation exceptions
-* Teller position
-* Agent float
-* Fraud alerts
-* AML alerts
-* Settlement status
-* Loan delinquency
-* System health
-
-Avoid overcrowded dashboards.
-
-Users should be able to move from a summary to the underlying details.
-
----
-
-## Security requirements
-
-Frontend security is the responsibility of every contributor.
-
-Do not store sensitive information unnecessarily.
-
-Never commit:
-
-* Passwords
-* API keys
-* Access tokens
-* Refresh tokens
-* Private certificates
-* Production endpoints containing secrets
-* Real customer data
-
-Use secure storage for sensitive mobile data.
-
-Avoid storing sensitive information in:
-
-* Local storage
-* Session storage
-* Browser logs
-* Analytics tools
-* Error messages
-* URLs
-* Query strings
-
-Protect against:
-
-* Cross-site scripting
-* Cross-site request forgery
-* Clickjacking
-* Open redirects
-* Insecure token storage
-* Session fixation
-* Sensitive data exposure
-* Dependency vulnerabilities
-
----
-
-## Logging and analytics
-
-Frontend logs should not contain:
-
-* Passwords
-* One-time passwords
-* Full card numbers
-* CVVs
-* Full BVNs
-* Full NINs
-* Access tokens
-* Refresh tokens
-* Private account information
-* Real customer documents
-
-Analytics should not capture sensitive financial or identity information.
-
-Use correlation IDs to help trace errors safely.
-
----
-
-## Environment variables
-
-Provide safe example files such as:
-
-```text
-.env.example
+# Create your local environment configuration
+cp .env.example .env.local
 ```
 
-Example:
+Configure `.env.local` with approved **development-only** endpoints. On Windows PowerShell, use `Copy-Item .env.example .env.local` instead of `cp` if desired.
 
-```env
+### Run the applications
+
+If the repository adopts the proposed pnpm workspace and application package names:
+
+```bash
+pnpm --filter individual-banking dev
+pnpm --filter corporate-banking dev
+```
+
+Actual package names, port assignments, and scripts must be confirmed in each application's `package.json`. Example URLs could be `http://localhost:3000` and `http://localhost:3001`; they are **not guaranteed defaults**.
+
+### Quality checks
+
+Run the scripts supported by the project configuration. For a workspace with the corresponding scripts:
+
+```bash
+pnpm lint
+pnpm test
+pnpm build
+```
+
+Do not switch package managers or commit additional lockfiles without maintainer approval.
+
+## Environment configuration
+
+A safe `.env.example` may contain:
+
+```dotenv
 NEXT_PUBLIC_APP_NAME=Core Banking Platform
 NEXT_PUBLIC_API_BASE_URL=http://localhost:5000
 NEXT_PUBLIC_IDENTITY_URL=http://localhost:8080
 NEXT_PUBLIC_ENVIRONMENT=development
 ```
 
-Do not place secrets in variables exposed to the browser.
+The values above are **illustrative**, not verified deployed endpoints. `NEXT_PUBLIC_` variables are visible to the browser and must **never** contain secrets, API keys, client secrets, or private credentials. Keep real `.env.local` files out of version control. Use only an approved authentication/session design.
 
-In Next.js, values prefixed with `NEXT_PUBLIC_` are available to client-side code.
+## Authentication, authorisation, and security
 
-Only public configuration should use that prefix.
+- Use approved backend identity services for login, MFA, recovery, and session lifecycle.
+- Enforce customer and corporate entitlements in backend APIs; hiding a button is **not** an authorisation control.
+- Scope all data and actions to the authenticated customer, corporate entity, and institution.
+- Design secure session expiry, reauthentication, lockout, and logout flows.
+- Avoid storing tokens or sensitive banking data in browser storage unless explicitly approved after security review. Prefer appropriately protected server-managed sessions where the architecture permits.
+- Protect against XSS, CSRF, open redirects, clickjacking, and accidental disclosure.
+- Never log passwords, OTPs, PINs, full card details, BVNs, NINs, access tokens, or real customer documents.
+- Never embed backend secrets or connect directly to a banking database from the web app.
+- Use synthetic test customers and synthetic transaction records in development.
+- Report suspected vulnerabilities privately through `SECURITY.md`, not public issues.
 
----
+## API integration principles
 
-## Local development requirements
+Backend systems are the **source of truth** for balances, fees, limits, posting results, and transaction status. Use approved, versioned APIs and typed request/response models.
 
-Recommended tools:
+- Handle authentication failures, validation errors, timeouts, unavailable services, insufficient funds, exceeded limits, restricted accounts, and provider failures.
+- Use correlation IDs for safe troubleshooting without logging private data.
+- Support request cancellation and bounded timeouts.
+- Do not blindly retry **money-moving requests**. Coordinate idempotency keys, request status checks, and retry rules with backend contracts.
+- For unknown transaction outcomes, show a **processing/unknown** state and let the customer verify status rather than suggesting immediate resubmission.
 
-* Git
-* Node.js
-* npm, pnpm or yarn
-* Flutter SDK
-* Dart SDK
-* Android Studio
-* Xcode for iOS development
-* Visual Studio Code or another IDE
-* Docker, where required
-* Figma access
+## Transaction experience
 
-Recommended versions:
+All payment flows should follow a predictable sequence:
 
-```text
-Node.js: current supported LTS
-TypeScript: current approved version
-Next.js: current approved stable version
-Flutter: current approved stable version
-Dart: version bundled with Flutter
-```
+1. Collect and validate details.
+2. Present the beneficiary, amount, currency, and any applicable fees.
+3. Show a review and confirmation screen.
+4. Request the required authentication or corporate approval.
+5. Submit once using the agreed idempotency mechanism.
+6. Show pending, successful, failed, or unknown status accurately.
+7. Display the transaction reference and receipt when the backend provides them.
 
-Use the versions defined by the repository configuration.
+Disable repeat submission during processing; never mark a payment successful solely because an HTTP request was sent. Display available balance and ledger balance distinctly, and use explicit currency and date formatting.
 
----
+## Corporate approval flows
 
-## Installing dependencies
+Corporate banking must account for delegated authorisation and multi-step workflows:
 
-For a pnpm workspace:
+- A payment **initiator** may prepare a transfer without being authorised to approve it.
+- **Approvers** should see the exact amounts, beneficiaries, fees, status, and approval requirements.
+- Clearly distinguish draft, submitted, pending approval, rejected, processing, completed, and failed states.
+- Display remaining approvals and audit-relevant metadata supplied by approved APIs.
+- Do not bypass backend mandates, approval thresholds, or segregation-of-duties rules.
 
-```bash
-pnpm install
-```
+## Design, accessibility, and responsiveness
 
-For npm:
+Use a consistent, reusable design system with components for fields, currency input, tables, pagination, dialogs, notifications, transaction summaries, and confirmation screens. Every user journey should account for loading, empty, validation, error, success, restricted-access, session-expired, and network-failure states.
 
-```bash
-npm install
-```
+Aim for **WCAG 2.1 AA** or a later approved standard: keyboard accessibility, visible focus, semantic controls, adequate contrast, labelled inputs, accessible errors, and screen-reader-friendly status updates. Support desktop, tablet, and mobile web, including slow networks. Never communicate transaction status by colour alone.
 
-For Flutter applications:
-
-```bash
-flutter pub get
-```
-
-Do not switch package managers without approval.
-
-Commit the correct lock file.
-
----
-
-## Running web applications locally
-
-Example:
-
-```bash
-pnpm dev
-```
-
-To run a specific application in a workspace:
-
-```bash
-pnpm --filter staff-operations-portal dev
-```
-
-Example development URLs may include:
-
-```text
-http://localhost:3000
-http://localhost:3001
-http://localhost:3002
-```
-
-Actual ports should be documented in each application README.
-
----
-
-## Running Flutter applications locally
-
-Check the Flutter environment:
-
-```bash
-flutter doctor
-```
-
-List connected devices:
-
-```bash
-flutter devices
-```
-
-Run the application:
-
-```bash
-flutter run
-```
-
-Run using a specific environment:
-
-```bash
-flutter run --dart-define=APP_ENVIRONMENT=development
-```
-
-Each mobile application should provide its own setup instructions.
-
----
-
-## Code quality
-
-Frontend contributors should:
-
-* Use TypeScript strictly
-* Avoid unnecessary use of `any`
-* Follow the repository linting rules
-* Use shared components
-* Use meaningful component names
-* Keep components focused
-* Separate presentation from business logic
-* Avoid duplicated API calls
-* Handle loading and error states
-* Write tests for critical flows
-* Remove debugging code
-* Document complex behaviour
-* Keep pull requests focused
-
-Use the configured formatter and linter before submitting work.
-
----
-
-## Component guidelines
-
-Components should:
-
-* Have a clear purpose
-* Be reusable where appropriate
-* Accept typed properties
-* Handle accessibility
-* Avoid unnecessary internal state
-* Support loading and disabled states
-* Avoid hidden side effects
-* Be documented when shared
-
-Shared components should be added only when they are genuinely reusable.
-
-Do not place application-specific business logic inside the shared UI package.
-
----
-
-## Naming conventions
-
-Recommended React component naming:
-
-```text
-CustomerSearch.tsx
-AccountSummary.tsx
-TransferReview.tsx
-ApprovalQueue.tsx
-TransactionTable.tsx
-```
-
-Recommended hook naming:
-
-```text
-useCustomer.ts
-usePermissions.ts
-useTransferForm.ts
-useTransactionStatus.ts
-```
-
-Recommended utility naming:
-
-```text
-formatCurrency.ts
-formatAccountNumber.ts
-mapApiError.ts
-validateTransactionReference.ts
-```
-
-Use names that describe business purpose rather than appearance alone.
-
----
+Institution-specific logos, colours, legal text, currencies, time zones, locale formats, and enabled features should be configured rather than hard-coded wherever possible.
 
 ## Testing strategy
 
-Frontend applications should include the following testing layers.
+Include tests at several levels:
 
-### Unit tests
+- **Unit:** currency/date formatters, validators, permissions, and pure utilities.
+- **Component:** forms, navigation, account cards, transaction review, and loading/error states.
+- **Integration:** identity flows, API errors, entitlement behaviour, and multi-step approval workflows.
+- **End-to-end:** individual login, onboarding, account views, transfers, bill payments, corporate payment initiation, and corporate approval.
+- **Accessibility/responsive:** keyboard navigation, screen readers, narrow displays, and error focus management.
 
-Used for:
+For financial journeys, test insufficient balance, limit breaches, restricted accounts, duplicate clicks, expired sessions, rejected approvals, provider timeouts, network loss, reversal outcomes, and unknown transaction status.
 
-* Utility functions
-* Validators
-* Formatters
-* Hooks
-* Permission checks
-* State transitions
+## Contribution workflow
 
-### Component tests
+This project currently welcomes volunteer collaboration. Contributors should read `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` if present before submitting changes.
 
-Used for:
+1. Pick or obtain assignment to an issue with acceptance criteria.
+2. Create a short-lived branch; do not commit directly to `main`.
+3. Implement the smallest safe change, including accessibility and failure states.
+4. Run the available lint, type-check, test, and build scripts.
+5. Open a pull request linked to the issue, with screenshots for UI changes and notes on API/security impacts.
+6. Obtain review and pass required CI checks before merging.
 
-* Forms
-* Tables
-* Dialogs
-* Navigation
-* Transaction summaries
-* Error states
-* Loading states
-
-### Integration tests
-
-Used for:
-
-* API integration
-* Authentication flows
-* Permission behaviour
-* Form submission
-* Multi-step workflows
-
-### End-to-end tests
-
-Used for critical journeys such as:
-
-* Customer login
-* Customer onboarding
-* Account opening
-* Internal transfer
-* Interbank transfer
-* Bill payment
-* Corporate payment approval
-* Agent cash deposit
-* Fraud-case review
-* Reconciliation exception handling
-
-### Accessibility tests
-
-Used for:
-
-* Keyboard navigation
-* Form labels
-* Focus management
-* Colour contrast
-* Screen-reader behaviour
-* Dialog accessibility
-
-### Visual regression tests
-
-May be used for:
-
-* Shared components
-* Key banking pages
-* Responsive layouts
-* Design-system changes
-
----
-
-## Required transaction test scenarios
-
-Transaction interfaces should test:
-
-* Successful submission
-* Invalid input
-* Insufficient balance
-* Limit exceeded
-* Restricted account
-* Duplicate submission
-* Provider timeout
-* Network interruption
-* Session expiration
-* Authorisation failure
-* Retry
-* Reversal result
-* Partial failure
-* Unknown processing status
-* Successful receipt generation
-
----
-
-## Performance
-
-Frontend performance should be monitored.
-
-Consider:
-
-* Bundle size
-* Code splitting
-* Lazy loading
-* Image optimisation
-* API caching
-* Request deduplication
-* Pagination
-* Virtualised tables
-* Route-level loading
-* Server rendering
-* Client rendering
-* Mobile network conditions
-
-Do not load large reports or transaction histories into memory unnecessarily.
-
----
-
-## Browser support
-
-The supported browser list should be defined by the project.
-
-Expected support may include recent versions of:
-
-* Google Chrome
-* Microsoft Edge
-* Mozilla Firefox
-* Safari
-
-Internet banking should be tested on common desktop and mobile browsers.
-
-Internal staff applications may use a more restricted supported-browser policy.
-
----
-
-## Mobile support
-
-The mobile team should define supported versions of:
-
-* Android
-* iOS
-
-Testing should cover:
-
-* Small screens
-* Large screens
-* Low-memory devices
-* Slow networks
-* Offline conditions
-* App backgrounding
-* Session expiration
-* Device rotation where supported
-* Biometric failures
-* Notification permissions
-
----
-
-## Internationalisation
-
-The platform should be prepared for multiple institutions and countries.
-
-Applications may need to support:
-
-* Multiple languages
-* Multiple currencies
-* Date formats
-* Time zones
-* Number formats
-* Right-to-left layouts
-* Country-specific terminology
-* Institution-specific branding
-
-Avoid hard-coding institution names, currencies and country-specific values.
-
----
-
-## Branding and multi-tenancy
-
-The frontend may support institution-specific:
-
-* Logos
-* Colours
-* Typography
-* Product names
-* Contact information
-* Legal text
-* Support channels
-* Feature availability
-
-Branding configuration should come from an approved configuration service where practical.
-
-Avoid creating separate codebases for every institution.
-
----
-
-## Deployment
-
-Web applications may be deployed using:
-
-* Docker
-* Kubernetes
-* Nginx
-* Cloud application platforms
-* Static and server-rendered hosting
-
-Mobile applications may be distributed through:
-
-* Google Play
-* Apple App Store
-* Approved enterprise distribution channels
-
-Environment promotion may include:
-
-* Development
-* Test
-* Staging
-* User acceptance testing
-* Production
-* Disaster recovery
-
----
-
-## CI/CD
-
-Frontend pipelines may include:
-
-* Dependency installation
-* Formatting checks
-* Linting
-* Type checking
-* Unit tests
-* Component tests
-* End-to-end tests
-* Accessibility checks
-* Build
-* Dependency scanning
-* Security scanning
-* Container build
-* Deployment
-* Smoke testing
-
-Pull requests should not be merged when required checks fail.
-
----
-
-## Branching convention
-
-Do not commit directly to `main`.
-
-Recommended branch formats:
+Suggested branch names:
 
 ```text
-feature/TASK-0301-customer-dashboard
+feature/TASK-0301-account-dashboard
 fix/TASK-0302-transfer-confirmation
-design/TASK-0303-corporate-payment-flow
-test/TASK-0304-internet-banking-login
-refactor/TASK-0305-shared-table-component
-docs/TASK-0306-frontend-setup
+test/TASK-0303-corporate-approvals
+docs/TASK-0304-local-setup
 ```
 
----
-
-## Commit convention
-
-Recommended format:
+Suggested commits:
 
 ```text
-type: short description
+feat: add individual account dashboard
+fix: prevent duplicate payment submissions
+test: cover corporate approval rejection
+docs: clarify development configuration
 ```
-
-Examples:
-
-```text
-feat: add customer account dashboard
-fix: prevent duplicate transfer submission
-test: add corporate approval flow tests
-docs: document frontend environment variables
-refactor: simplify transaction table filters
-style: align form spacing with design system
-```
-
----
-
-## Pull request requirements
-
-Every pull request should include:
-
-* Related Issue or task
-* Summary
-* Screens or modules changed
-* Testing performed
-* Screenshots
-* Mobile screenshots where applicable
-* Responsive behaviour
-* Accessibility considerations
-* API dependencies
-* Known limitations
-* Security considerations
-
-Visual changes should include before-and-after screenshots where useful.
-
----
 
 ## Definition of done
 
-A frontend task is complete only when:
+A feature is complete when its acceptance criteria are met; the interface is responsive and accessible; relevant loading, error, empty, and authorisation states are covered; validation and backend integration work correctly; important financial edge cases are tested; sensitive data is handled safely; documentation is updated; and required reviews and checks have passed.
 
-* The approved design has been implemented
-* Acceptance criteria are satisfied
-* The interface is responsive
-* Loading states are implemented
-* Error states are implemented
-* Empty states are implemented
-* Permission rules are implemented
-* Forms are validated
-* API integration is complete
-* Relevant tests pass
-* Accessibility has been reviewed
-* Security concerns have been addressed
-* Documentation is updated
-* The pull request has been reviewed
-* The task tracker has been updated
-* The change has been merged
+## Volunteer participation and licence
 
----
+This is presently an **unpaid volunteer project**. Participation does not create employment or guarantee compensation. Contributions must comply with the repository's `LICENSE` and must not incorporate third-party proprietary code, designs, or assets without permission. Consult `LICENSE` for the actual legal terms; do not assume a particular open-source licence.
 
-## Contribution guide
+## Production-use disclaimer
 
-Read `CONTRIBUTING.md` before starting work.
-
-Contributors must follow:
-
-* Task assignment rules
-* Branching rules
-* Commit conventions
-* Pull-request requirements
-* Design-system standards
-* Accessibility requirements
-* Security requirements
-* Testing requirements
-* Documentation standards
-* Code of Conduct
-
----
-
-## Volunteer participation
-
-This is currently an unpaid volunteer project.
-
-Participation does not create an employment relationship or guarantee future payment.
-
-Contributors participate to:
-
-* Learn
-* Gain practical experience
-* Build portfolio evidence
-* Collaborate with others
-* Understand financial applications
-* Contribute to an open-source banking platform
-
-Contributors should communicate honestly about availability, progress and blockers.
-
----
-
-## Licence
-
-This project is distributed under the licence included in the `LICENSE` file.
-
-Unless otherwise agreed in writing, contributions submitted to this repository will be licensed under the same licence.
-
-Do not submit proprietary designs, source code, assets or components without permission.
-
----
-
-## Disclaimer
-
-This project is under development and is provided for learning, research and engineering collaboration.
-
-It must not be used for real banking operations, customer funds or sensitive financial information without:
-
-* Security assessment
-* Legal review
-* Regulatory review
-* Accessibility review
-* Performance testing
-* Penetration testing
-* Production-readiness approval
-* Disaster-recovery validation
-
----
+The project is intended for development, learning, research, and collaborative engineering. It must **not** be deployed for real banking transactions or real customer financial data without formal security assessment, penetration testing, legal/regulatory review, performance and accessibility testing, operational monitoring, disaster-recovery validation, and explicit production-readiness approval.
 
 ## Getting help
 
-Use the approved project communication channels for:
-
-* Onboarding
-* Design questions
-* Task assignment
-* API questions
-* Architecture discussions
-* Progress updates
-* Blockers
-* Security concerns
-* Accessibility questions
-
-When requesting help, include:
-
-* Application name
-* Task ID
-* Page or component
-* Expected behaviour
-* Actual behaviour
-* Screenshot where safe
-* Error message
-* Browser or device
-* Steps already attempted
-
-Do not share passwords, tokens or sensitive customer information when requesting help.
+Use the team's approved issue tracker or communication channel. Include the app name (`individual-banking` or `corporate-banking`), task ID, steps to reproduce, expected/actual behaviour, browser, and non-sensitive logs or screenshots. Never post credentials, tokens, customer records, or bank-account details.
 
 ---
 
-## Acknowledgements
-
-Thank you to every volunteer contributing frontend development, mobile development, UI/UX design, testing, documentation and engineering effort to the Core Banking Platform.
+Thanks to everyone contributing engineering, design, QA, security, and documentation work to the Core Banking Platform.
